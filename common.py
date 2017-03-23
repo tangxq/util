@@ -24,5 +24,6 @@ def retry_request(url, times=3):
             # break
         times -= 1
         print('重试第%d次' % i)
+        time.sleep(1)
         i += 1
 
